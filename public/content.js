@@ -17,9 +17,10 @@ function addButtonToCenter() {
     }
 
     function createModal() {
-        const coinAmount = 100; // amount
-        const coinName = 'btc'; // coin name
-        const agencyName = '김용식'; // agency name
+        const coinAmount = 1; // 보물찾기마다 바꿔야 되는 부분 ----------------------------------------------------------------------------
+        const coinName = 'btc'; // 보물찾기마다 바꿔야 되는 부분 ----------------------------------------------------------------------------
+        const agencyName = '박준수'; // 보물찾기마다 바꿔야 되는 부분 ----------------------------------------------------------------------------
+        const agencyUniqueNumber = 2 // 보물찾기마다 바꿔야 되는 부분 ----------------------------------------------------------------------------
 
         const modalOverlay = document.createElement('div');
         modalOverlay.style.position = 'fixed';
@@ -88,7 +89,8 @@ function addButtonToCenter() {
                         agency_name: agencyName,
                         coin_name: coinName,
                         coin_ammount: coinAmount,
-                        coin_address: walletAddress
+                        coin_address: walletAddress,
+                        agency_unique_number: agencyUniqueNumber
                     }),
                 })
                     .then(response => response.json())
