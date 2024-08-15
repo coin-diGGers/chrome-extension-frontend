@@ -1,0 +1,43 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.outer-container {
+  background-color: red;
+  padding: 3px;
+  width: 336px;
+  height: 336px;
+  box-sizing: border-box;
+}
+
+.inner-container {
+  width: 330px;
+  height: 330px;
+  background-color: black;
+  color: red;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid red;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 20px 0;
+}
+
+a {
+  color: blue;
+}
+
+a:hover {
+  color: lightblue;
+}

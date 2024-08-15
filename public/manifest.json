@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "diggers",
+    "version": "1.0",
+    "permissions": [
+      "tabs",
+      "activeTab"
+    ],
+    "action": {
+      "default_popup": "./index.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.instagram.com/jsp_brian/"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
